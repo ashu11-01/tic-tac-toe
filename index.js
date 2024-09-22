@@ -48,9 +48,9 @@ function updateTurnInfo(){
 function dispatch(){
 
     if(isCrossTurn)
-        performMove(-1,"file:///C:/xampp/htdocs/tictactoe/cross.png");
+        performMove(-1,"file:./cross.png");
     else
-        performMove(1,"file:///C:/xampp/htdocs/tictactoe/oval.png");
+        performMove(1,"file:./oval.png");
 }
 
 
