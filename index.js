@@ -28,10 +28,12 @@ for(let i = 0; i < table.rows.length; i++)
     {
         table.rows[i].cells[j].onclick = function()
         {
+            if(player1.length==0)
+		player1 = "X";
+    	    if(player2.length==0)
+	        player2 = "O"
             rIndex = this.parentElement.rowIndex;
             cIndex = this.cellIndex;
-            // console.log(rIndex,cIndex);
-            // updateLayout();
             //check if clicked box is empty and winner is not decided yet
             if(matrix[rIndex][cIndex] ===0 && ! haveWinner){
                 dispatch();
@@ -59,7 +61,6 @@ function performMove(moveCode,imagePath){
     table.rows[rIndex].cells[cIndex].childNodes[0].src = imagePath
     
     matrix[rIndex][cIndex] = moveCode;
-    console.log(matrix);
     isCrossTurn = !isCrossTurn;
     updateTurnInfo();
     let winnerResult = checkWinner();

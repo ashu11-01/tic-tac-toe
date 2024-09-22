@@ -5,12 +5,14 @@
     <link rel="stylesheet" href="index.css"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<body >
+<body>
     <h1>Tic Tac Toe</h1>
-    <br><br>
-    Player 1 <input type="text" id="p1">
-    Player 2 <input type="text" id="p2"><br><br>
-    <button type="button" id="pbtn" onClick="updatePlayer()">Start Game</button>
+    <p>Player 1 <input type="text" id="p1"></p>
+    <p>Player 2 <input type="text" id="p2"></p>
+    <p>
+	<button type="button" id="pbtn" onClick="updatePlayer()">Start Game</button>
+	<button type="button" id="pbtn" onClick=window.location.reload()>Reset</button>
+    </p>
     <br><br>
     <div class="panel">
         <table id ="board" cellspacing=0 cellpadding=0 border="2">
