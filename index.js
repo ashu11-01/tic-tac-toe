@@ -48,9 +48,9 @@ function updateTurnInfo(){
 function dispatch(){
 
     if(isCrossTurn)
-        performMove(-1,"file:./cross.png");
+        performMove(-1,"file:https://ashu11-01.github.io/tic-tac-toe/cross.png");
     else
-        performMove(1,"file:./oval.png");
+        performMove(1,"file:https://ashu11-01.github.io/tic-tac-toe/oval.png");
 }
 
 
