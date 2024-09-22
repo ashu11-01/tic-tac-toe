@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tic Tac toe</title>
+    
+    <link rel="stylesheet" href="index.css"></script>
+</head>
+<body >
+    <h1>Tic Tac Toe</h1>
+    <br><br>
+    Player 1 <input type="text" id="p1">
+    Player 2 <input type="text" id="p2"><br><br>
+    <button type="button" id="pbtn" onClick="updatePlayer()">Start Game</button>
+    <br><br>
+    <div class="panel">
+        <table id ="board" cellspacing=0 cellpadding=0 border="2">
+            <tr>
+                <td ><img id="00" class="panel" src="neutral.png"></td>
+                <td ><img id="01" class="panel" src="neutral.png"></td>
+                <td ><img  class="panel" src="neutral.png" ></td>
+            </tr>
+            <tr>
+                <td ><img  class="panel" src="neutral.png"></td>
+                <td ><img  class="panel" src="neutral.png"></td>
+                <td ><img  class="panel" src="neutral.png"></td>
+            </tr>
+            <tr>
+                <td ><img  class="panel" src="neutral.png"></td>
+                <td ><img  class="panel" src="neutral.png"></td>
+                <td ><img  class="panel" src="neutral.png"></td>
+            </tr>
+            
+        </table>
+        
+    </div>
+    <div name="info" class="info">
+        <h3 id="turn"></h4>
+        <p><h3 id="winner"></h3></p>
+    </div>
+</body>
+<script type="text/javascript" src="index.js"></script>
+</html>
